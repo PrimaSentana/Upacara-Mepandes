@@ -1,0 +1,254 @@
+:root {
+    --putih: #ffffff;
+    --emas: #9f8450;
+    --hitam: #000000;
+    --abu: #8a8a8a;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.Mepandes::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bgh.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: sepia();
+    z-index: -1;
+}
+
+
+.Mepandes {
+    position: relative;
+    min-height: 100vh;
+}
+
+.Mepandes h1,
+.Mepandes h4,
+.Mepandes p{
+    text-shadow: var(--shadow);
+}
+
+.Mepandes h1 {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #9f8450;
+}
+
+.Mepandes a {
+    color: var(--white);
+    background-color: var(--emas);
+}
+
+.Mepandes a:hover {
+    color: var(--abu);
+    background-color: #423830;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: "Sacramento", cursive;
+    font-size: 2.5rem;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+  
+
+.home {
+    background-image: url(img/Desain\ tanpa\ judul\ \(6\).jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    color: #9f8450;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'sacramento';
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.home h3 {
+    color: #666;
+    font-size: 2rem;
+}
+
+.home p {
+    color: #444;
+    font-size: 1.2rem;
+}
+
+.home h4 {
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.home h5 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.daftar-nama {
+    color: #666;
+    list-style: none; /* Menghilangkan titik */
+    padding: 0;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.info {
+    background-image: url(img/47263c03b6796a0c67b38530d424eb87.jpg);
+    background-color: var(--bg);
+    color: white;
+    padding-top: 11rem;
+    padding-bottom: 8rem;
+    
+}
+
+.info h2 {
+    color: #9f8450;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'sacramento';
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.info a {
+    font-size: 1.7rem;
+}
+
+.info .Alamat {
+    font-size: 1.5rem;
+}
+
+.map-container {
+    max-width: 430px; /* Atur lebar maksimal */
+    margin: 0 auto; /* Agar tetap di tengah */
+  }
+  
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-header {
+    font-size: 1.7rem;
+}
+
+.info .card-body {
+    border-bottom: 1px solid #999;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+footer {
+    padding: 3rem;
+    background-color: #9f8450;
+    color: #ffffff;
+}
+
+footer a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+}
+
+  
+
+/* media quary*/
+/*laptop*/
+@media (max-width: 992px) {
+    .simply-countdown-dark .simply-word {
+        font-size: 1rem !important; /* Kata seperti "Days", "Hours", dll. */
+    }
+    html {
+        font-size: 75%;
+    }
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    .simply-countdown-dark .simply-amount {
+        font-size: 2.5rem !important;
+    }
+
+    .simply-countdown-dark .simply-word {
+        font-size: 0.9rem !important;
+    }
+    html {
+        font-size: 65%;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+}
+
+/*hp*/
+@media (max-width: 576px) {
+    .simply-countdown-dark .simply-amount {
+        font-size: 2rem !important;
+    }
+
+    .simply-countdown-dark .simply-word {
+        font-size: 0.8rem !important;
+    }
+    html {
+        font-size: 60%;
+    }
+    
+}
